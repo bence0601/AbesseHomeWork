@@ -6,18 +6,20 @@
         "Version": "2.23.0-preview"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.95.4\\lib/netstandard2.0/ClosedXML.dll",
+        "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.102.2\\lib/netstandard2.1/ClosedXML.dll",
         "C:\\Users\\user\\.nuget\\packages\\csvhelper\\16.0.0\\lib/netstandard2.1/CsvHelper.dll",
-        "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.12.1\\lib/netstandard2.0/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.0.10\\lib/netstandard2.0/ExcelNumberFormat.dll",
+        "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/netstandard2.0/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/netstandard2.0/ExcelNumberFormat.dll",
+        "C:\\Users\\user\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/netstandard1.6/Irony.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\lib/netstandard2.0/Microsoft.VisualStudio.OLE.Interop.dll",
         "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OOXML.dll",
         "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXml4Net.dll",
         "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib/netstandard2.1/NPOI.dll",
         "C:\\Users\\user\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
         "C:\\Users\\user\\.nuget\\packages\\sharpziplib\\1.3.3\\lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\user\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\lib/netcoreapp3.1/SixLabors.Fonts.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.codedworkflows\\23.10.2\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
@@ -25,11 +27,12 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/Office.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.API.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib/net6.0-windows7.0/UiPath.Excel.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.platform\\23.10.0\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.telemetry.client\\1.6.69\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\user\\.nuget\\packages\\xlparser\\1.5.2\\lib/netstandard1.6/XLParser.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview"
     },
@@ -41,8 +44,8 @@
       "Assemblies": [
         "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
         "C:\\Users\\user\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
-        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
         "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
         "C:\\Users\\user\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
         "C:\\Users\\user\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
         "C:\\Users\\user\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
@@ -115,8 +118,8 @@
         "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.2.15\\runtimes/win/lib/net6.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.2.15\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.powershell.commands.management\\7.2.15\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\user\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.2.15\\runtimes/win/lib/net6.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -153,8 +156,8 @@
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.duplex\\4.9.0\\lib/net6.0/System.ServiceModel.Duplex.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.http\\4.9.0\\lib/net6.0/System.ServiceModel.Http.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.nettcp\\4.9.0\\lib/net6.0/System.ServiceModel.NetTcp.dll",
-        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.Primitives.dll",
+        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib/net6.0/System.ServiceModel.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.security\\4.9.0\\lib/net6.0/System.ServiceModel.Security.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.syndication\\6.0.0\\lib/net6.0/System.ServiceModel.Syndication.dll",
         "C:\\Users\\user\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.1\\runtimes/win/lib/net6.0/System.ServiceProcess.ServiceController.dll",
@@ -190,8 +193,8 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Api.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib/net6.0-windows7.0/UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview"
     },
@@ -227,17 +230,17 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities\\23.10.8"
     },
@@ -258,6 +261,31 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib/net6.0-windows7.0/UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.webapi.activities\\1.18.0"
+    },
+    {
+      "Package": {
+        "Id": "Newtonsoft.Json",
+        "Version": "13.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll"
+      ],
+      "Path": "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3"
+    },
+    {
+      "Package": {
+        "Id": "ClosedXML",
+        "Version": "0.102.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.102.2\\lib/netstandard2.1/ClosedXML.dll",
+        "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib/netstandard2.0/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib/netstandard2.0/ExcelNumberFormat.dll",
+        "C:\\Users\\user\\.nuget\\packages\\irony.netcore\\1.0.11\\lib/netstandard1.6/Irony.dll",
+        "C:\\Users\\user\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\lib/netcoreapp3.1/SixLabors.Fonts.dll",
+        "C:\\Users\\user\\.nuget\\packages\\xlparser\\1.5.2\\lib/netstandard1.6/XLParser.dll"
+      ],
+      "Path": "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.102.2"
     }
   ],
   "Conflicts": [],
@@ -325,23 +353,35 @@
     },
     "ClosedXML": {
       "Id": "ClosedXML",
-      "Version": "0.95.4",
+      "Version": "0.102.2",
       "Dependencies": [
         {
           "Item1": "DocumentFormat.OpenXml",
-          "Item2": "[2.7.2, )"
+          "Item2": "[2.16.0, 3.0.0)"
         },
         {
           "Item1": "ExcelNumberFormat",
-          "Item2": "[1.0.10, )"
+          "Item2": "[1.1.0, )"
         },
         {
-          "Item1": "Microsoft.CSharp",
-          "Item2": "[4.7.0, )"
+          "Item1": "SixLabors.Fonts",
+          "Item2": "[1.0.0, )"
         },
         {
-          "Item1": "System.Drawing.Common",
-          "Item2": "[4.5.0, )"
+          "Item1": "System.IO.Packaging",
+          "Item2": "[6.0.0, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.4, )"
+        },
+        {
+          "Item1": "System.Text.RegularExpressions",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "XLParser",
+          "Item2": "[1.5.2, )"
         }
       ]
     },
@@ -357,7 +397,7 @@
     },
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
-      "Version": "2.12.1",
+      "Version": "2.16.0",
       "Dependencies": [
         {
           "Item1": "System.IO.Packaging",
@@ -367,7 +407,7 @@
     },
     "ExcelNumberFormat": {
       "Id": "ExcelNumberFormat",
-      "Version": "1.0.10",
+      "Version": "1.1.0",
       "Dependencies": []
     },
     "Google.Apis": {
@@ -450,6 +490,36 @@
       "Id": "HtmlAgilityPack",
       "Version": "1.11.38",
       "Dependencies": []
+    },
+    "Irony.NetCore": {
+      "Id": "Irony.NetCore",
+      "Version": "1.0.11",
+      "Dependencies": [
+        {
+          "Item1": "NETStandard.Library",
+          "Item2": "[1.6.1, )"
+        },
+        {
+          "Item1": "System.Reflection",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Emit.Lightweight",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.Extensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Reflection.TypeExtensions",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Runtime.Numerics",
+          "Item2": "[4.3.0, )"
+        }
+      ]
     },
     "MailKit": {
       "Id": "MailKit",
@@ -945,7 +1015,7 @@
     },
     "Microsoft.NETCore.Targets": {
       "Id": "Microsoft.NETCore.Targets",
-      "Version": "1.1.0",
+      "Version": "1.1.3",
       "Dependencies": []
     },
     "Microsoft.NETCore.Windows.ApiSets": {
@@ -1919,6 +1989,11 @@
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.3.3",
+      "Dependencies": []
+    },
+    "SixLabors.Fonts": {
+      "Id": "SixLabors.Fonts",
+      "Version": "1.0.0",
       "Dependencies": []
     },
     "System.Activities.ViewModels": {
@@ -3187,15 +3262,15 @@
     },
     "System.Runtime": {
       "Id": "System.Runtime",
-      "Version": "4.3.0",
+      "Version": "4.3.1",
       "Dependencies": [
         {
           "Item1": "Microsoft.NETCore.Platforms",
-          "Item2": "[1.1.0, )"
+          "Item2": "[1.1.1, )"
         },
         {
           "Item1": "Microsoft.NETCore.Targets",
-          "Item2": "[1.1.0, )"
+          "Item2": "[1.1.3, )"
         }
       ]
     },
@@ -3963,11 +4038,11 @@
     },
     "System.Text.RegularExpressions": {
       "Id": "System.Text.RegularExpressions",
-      "Version": "4.3.0",
+      "Version": "4.3.1",
       "Dependencies": [
         {
           "Item1": "System.Runtime",
-          "Item2": "[4.3.0, )"
+          "Item2": "[4.3.1, )"
         }
       ]
     },
@@ -4775,6 +4850,20 @@
           "Item2": "[23.4.1, )"
         }
       ]
+    },
+    "XLParser": {
+      "Id": "XLParser",
+      "Version": "1.5.2",
+      "Dependencies": [
+        {
+          "Item1": "Irony.NetCore",
+          "Item2": "[1.0.11, )"
+        },
+        {
+          "Item1": "NETStandard.Library",
+          "Item2": "[1.6.1, )"
+        }
+      ]
     }
   },
   "AllPackages": [
@@ -4811,12 +4900,12 @@
     {
       "Package": {
         "Id": "ClosedXML",
-        "Version": "0.95.4"
+        "Version": "0.102.2"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.95.4\\lib\\netstandard2.0\\ClosedXML.dll"
+        "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.102.2\\lib\\netstandard2.1\\ClosedXML.dll"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.95.4"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\closedxml\\0.102.2"
     },
     {
       "Package": {
@@ -4831,22 +4920,22 @@
     {
       "Package": {
         "Id": "DocumentFormat.OpenXml",
-        "Version": "2.12.1"
+        "Version": "2.16.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.12.1\\lib\\netstandard2.0\\DocumentFormat.OpenXml.dll"
+        "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.16.0\\lib\\netstandard2.0\\DocumentFormat.OpenXml.dll"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.12.1"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\documentformat.openxml\\2.16.0"
     },
     {
       "Package": {
         "Id": "ExcelNumberFormat",
-        "Version": "1.0.10"
+        "Version": "1.1.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.0.10\\lib\\netstandard2.0\\ExcelNumberFormat.dll"
+        "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.1.0\\lib\\netstandard2.0\\ExcelNumberFormat.dll"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.0.10"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\excelnumberformat\\1.1.0"
     },
     {
       "Package": {
@@ -4864,8 +4953,8 @@
         "Version": "1.55.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\netstandard2.0\\Google.Apis.Auth.dll",
-        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\netstandard2.0\\Google.Apis.Auth.PlatformServices.dll"
+        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\netstandard2.0\\Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib\\netstandard2.0\\Google.Apis.Auth.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\google.apis.auth\\1.55.0"
     },
@@ -4918,6 +5007,16 @@
         "C:\\Users\\user\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib\\netstandard2.0\\HtmlAgilityPack.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\htmlagilitypack\\1.11.38"
+    },
+    {
+      "Package": {
+        "Id": "Irony.NetCore",
+        "Version": "1.0.11"
+      },
+      "Assemblies": [
+        "C:\\Users\\user\\.nuget\\packages\\irony.netcore\\1.0.11\\lib\\netstandard1.6\\Irony.dll"
+      ],
+      "Path": "C:\\Users\\user\\.nuget\\packages\\irony.netcore\\1.0.11"
     },
     {
       "Package": {
@@ -5331,8 +5430,8 @@
         "Version": "2.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.dll",
-        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.Native.dll"
+        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.Native.dll",
+        "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes\\win10-x64\\lib\\netstandard1.6\\Microsoft.Management.Infrastructure.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0"
     },
@@ -5349,12 +5448,12 @@
     {
       "Package": {
         "Id": "Microsoft.NETCore.Targets",
-        "Version": "1.1.0"
+        "Version": "1.1.3"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\lib\\netstandard1.0\\_._"
+        "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\lib\\netstandard1.0\\_._"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3"
     },
     {
       "Package": {
@@ -5622,10 +5721,10 @@
         "Version": "2.5.5"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll",
         "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OOXML.dll",
         "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXml4Net.dll",
-        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll"
+        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5\\lib\\netstandard2.1\\NPOI.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\npoi\\2.5.5"
     },
@@ -6060,12 +6159,12 @@
     {
       "Package": {
         "Id": "runtime.win.System.Console",
-        "Version": "4.3.0"
+        "Version": "4.3.1"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\runtime.win.system.console\\4.3.0\\runtimes\\win\\lib\\netstandard1.3\\System.Console.dll"
+        "C:\\Users\\user\\.nuget\\packages\\runtime.win.system.console\\4.3.1\\runtimes\\win\\lib\\netstandard1.3\\System.Console.dll"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\runtime.win.system.console\\4.3.0"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\runtime.win.system.console\\4.3.1"
     },
     {
       "Package": {
@@ -6120,10 +6219,10 @@
     {
       "Package": {
         "Id": "runtime.win7-x64.runtime.native.System.IO.Compression",
-        "Version": "4.3.0"
+        "Version": "4.3.2"
       },
       "Assemblies": [],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.0"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\runtime.win7-x64.runtime.native.system.io.compression\\4.3.2"
     },
     {
       "Package": {
@@ -6144,6 +6243,16 @@
         "C:\\Users\\user\\.nuget\\packages\\sharpziplib\\1.3.3\\lib\\netstandard2.1\\ICSharpCode.SharpZipLib.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\sharpziplib\\1.3.3"
+    },
+    {
+      "Package": {
+        "Id": "SixLabors.Fonts",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\user\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\lib\\netcoreapp3.1\\SixLabors.Fonts.dll"
+      ],
+      "Path": "C:\\Users\\user\\.nuget\\packages\\sixlabors.fonts\\1.0.0"
     },
     {
       "Package": {
@@ -6325,8 +6434,8 @@
         "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll",
-        "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll"
+        "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.Messages.dll",
+        "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Diagnostics.EventLog.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0"
     },
@@ -6787,10 +6896,10 @@
     {
       "Package": {
         "Id": "System.Runtime",
-        "Version": "4.3.0"
+        "Version": "4.3.1"
       },
       "Assemblies": [],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\system.runtime\\4.3.0"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\system.runtime\\4.3.1"
     },
     {
       "Package": {
@@ -7042,8 +7151,8 @@
         "Version": "4.9.0"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.dll",
-        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.Primitives.dll"
+        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.Primitives.dll",
+        "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\lib\\net6.0\\System.ServiceModel.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0"
     },
@@ -7136,12 +7245,12 @@
     {
       "Package": {
         "Id": "System.Text.RegularExpressions",
-        "Version": "4.3.0"
+        "Version": "4.3.1"
       },
       "Assemblies": [
-        "C:\\Users\\user\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\lib\\netstandard1.6\\System.Text.RegularExpressions.dll"
+        "C:\\Users\\user\\.nuget\\packages\\system.text.regularexpressions\\4.3.1\\lib\\netstandard1.6\\System.Text.RegularExpressions.dll"
       ],
-      "Path": "C:\\Users\\user\\.nuget\\packages\\system.text.regularexpressions\\4.3.0"
+      "Path": "C:\\Users\\user\\.nuget\\packages\\system.text.regularexpressions\\4.3.1"
     },
     {
       "Package": {
@@ -7320,8 +7429,8 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\Office.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.API.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.Package.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview\\lib\\net6.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.excel.activities\\2.23.0-preview"
@@ -7438,8 +7547,8 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Api.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.testing.activities\\23.12.0-preview"
     },
@@ -7467,12 +7576,12 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.10.8"
     },
@@ -7484,9 +7593,9 @@
       "Assemblies": [
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.vision\\3.11.1"
     },
@@ -7511,6 +7620,16 @@
         "C:\\Users\\user\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0\\lib\\net6.0-windows7.0\\UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\user\\.nuget\\packages\\uipath.webapi.runtime\\1.18.0"
+    },
+    {
+      "Package": {
+        "Id": "XLParser",
+        "Version": "1.5.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\user\\.nuget\\packages\\xlparser\\1.5.2\\lib\\netstandard1.6\\XLParser.dll"
+      ],
+      "Path": "C:\\Users\\user\\.nuget\\packages\\xlparser\\1.5.2"
     }
   ]
 }

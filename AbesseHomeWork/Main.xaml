@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="920,3901" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1032,5081" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -124,16 +124,20 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="848,3836" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="961,5016" sap2010:WorkflowViewState.IdRef="Sequence_18">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="JsonString" />
+      <Variable x:TypeArguments="njl:JArray" Name="JsonArray" />
+      <Variable x:TypeArguments="x:Int32" Name="counter" />
+      <Variable x:TypeArguments="x:Int32" Name="Rowcounter" />
+      <Variable x:TypeArguments="sd:DataTable" Name="IBUsource2DT" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="Http client" EnableSSLVerification="True" EndPoint="https://api.punkapi.com/v2/beers" sap:VirtualizedContainerService.HintSize="786,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
+    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" ContinueOnError="True" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.punkapi.com/v2/beers" sap:VirtualizedContainerService.HintSize="899,25" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" TimeoutMS="6000">
       <ui:HttpClient.Attachments>
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.Attachments>
@@ -148,141 +152,127 @@
       </ui:HttpClient.Parameters>
       <ui:HttpClient.Result>
         <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">JsonString</CSharpReference>
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">JsonString</CSharpReference>
         </OutArgument>
       </ui:HttpClient.Result>
       <ui:HttpClient.UrlSegments>
         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
       </ui:HttpClient.UrlSegments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:HttpClient>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="786,3615" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Projects\AbesseHomeWork\AbesseHomeWork\BeerIbuExcel.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="899,4840" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="C:\Projects\AbesseHomeWork\AbesseHomeWork\BeerIbuExcel.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="752,3505" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="865,4730" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <Sequence.Variables>
-              <Variable x:TypeArguments="njl:JArray" Name="JsonArray" />
-              <Variable x:TypeArguments="x:Int32" Name="Counter" />
-              <Variable x:TypeArguments="x:Int32" Name="RowCounter" />
+              <Variable x:TypeArguments="sd:DataTable" Name="DataTableVariable" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="690,60" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_1">
+            <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="803,60" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2">
               <ui:DeserializeJsonArray.JsonArray>
                 <OutArgument x:TypeArguments="njl:JArray">
-                  <CSharpReference x:TypeArguments="njl:JArray" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">JsonArray</CSharpReference>
+                  <CSharpReference x:TypeArguments="njl:JArray" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">JsonArray</CSharpReference>
                 </OutArgument>
               </ui:DeserializeJsonArray.JsonArray>
               <ui:DeserializeJsonArray.JsonString>
                 <InArgument x:TypeArguments="x:String">
-                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">JsonString</CSharpValue>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">JsonString</CSharpValue>
                 </InArgument>
               </ui:DeserializeJsonArray.JsonString>
             </ui:DeserializeJsonArray>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="690,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-              <ui:MultipleAssign.AssignOperations>
-                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                    <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:Int32">
-                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Counter</CSharpReference>
-                      </OutArgument>
-                    </ui:AssignOperation.To>
-                    <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
-                    </ui:AssignOperation.Value>
-                  </ui:AssignOperation>
-                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                    <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="x:Int32">
-                        <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">RowCounter</CSharpReference>
-                      </OutArgument>
-                    </ui:AssignOperation.To>
-                    <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
-                    </ui:AssignOperation.Value>
-                  </ui:AssignOperation>
-                </scg:List>
-              </ui:MultipleAssign.AssignOperations>
-            </ui:MultipleAssign>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="690,3107" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <Assign sap:VirtualizedContainerService.HintSize="803,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">
+                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_26">counter</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">
+                  <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">0</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="803,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">
+                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">Rowcounter</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="803,4275" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="656,2971" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="769,4139" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="NameString" />
                     <Variable x:TypeArguments="x:String" Name="StrIbuValue" />
-                    <Variable x:TypeArguments="sd:DataTable" Name="IBUsource2DT" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="614,147" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                    <ui:MultipleAssign.AssignOperations>
-                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                          <ui:AssignOperation.To>
-                            <OutArgument x:TypeArguments="x:String">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">NameString</CSharpReference>
-                            </OutArgument>
-                          </ui:AssignOperation.To>
-                          <ui:AssignOperation.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">JsonArray.SelectToken("[" + counter.ToString() + "]['name']").ToString()</CSharpValue>
-                            </InArgument>
-                          </ui:AssignOperation.Value>
-                        </ui:AssignOperation>
-                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                          <ui:AssignOperation.To>
-                            <OutArgument x:TypeArguments="x:String">
-                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">StrIbuValue</CSharpReference>
-                            </OutArgument>
-                          </ui:AssignOperation.To>
-                          <ui:AssignOperation.Value>
-                            <InArgument x:TypeArguments="x:String">
-                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">JsonArray.SelectToken("[" + counter.ToString() + "]['ibu']").ToString()</CSharpValue>
-                            </InArgument>
-                          </ui:AssignOperation.Value>
-                        </ui:AssignOperation>
-                      </scg:List>
-                    </ui:MultipleAssign.AssignOperations>
-                  </ui:MultipleAssign>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Untappd Beer Search | Untappd" sap:VirtualizedContainerService.HintSize="614,920" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="62cf0d32-57ef-442f-a9f5-0ebfa3ec47e3" Version="V2">
+                  <Assign sap:VirtualizedContainerService.HintSize="727,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">NameString</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">JsonArray.SelectToken("[" + counter.ToString() + "]['name']").ToString()</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="727,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">StrIbuValue</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">JsonArray.SelectToken("[" + counter.ToString() + "]['ibu']").ToString()</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Untappd Beer Search | Untappd" sap:VirtualizedContainerService.HintSize="727,924" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="7dc434b6-d531-4c55-a90d-2f73939418ab" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,703" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                          <Sequence.Variables>
-                            <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable">
-                              <Variable.Default>
-                                <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">new System.Data.DataTable();</CSharpValue>
-                              </Variable.Default>
-                            </Variable>
-                          </Sequence.Variables>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,707" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'untappd.com/search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="62cf0d32-57ef-442f-a9f5-0ebfa3ec47e3" Version="V3">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'untappd.com/search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="7dc434b6-d531-4c55-a90d-2f73939418ab" Version="V3">
                             <uix:NTypeInto.Target>
-                              <uix:TargetAnchorable CvElementArea="116, 51, 1537, 39" CvType="InputBox" DesignTimeRectangle="165, 59, 1411, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'untappd.com/search'" FullSelectorArgument="&lt;ctrl name='Untappd Beer Search | Untappd - Google Chrome – Bence' role='pane' /&gt;&lt;ctrl name='Cím- és keresősáv' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Untappd Beer Search | Untappd - Google Chrome – Bence' role='pane' /&gt;&lt;ctrl name='Cím- és keresősáv' role='editable text' automationid='' /&gt;" Guid="1e5f75f0-b3ba-43e2-8e7d-79cb0acb05ec" InformativeScreenshot="5d998d43dbad54b0e14ef969ae9fc413.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Untappd Beer Search | Untappd - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                              <uix:TargetAnchorable CvElementArea="118, 53, 1491, 37" CvType="InputBox" DesignTimeRectangle="165, 59, 1375, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'untappd.com/search'" FullSelectorArgument="&lt;ctrl name='Untappd Beer Search | Untappd - Google Chrome – Bence' role='pane' /&gt;&lt;ctrl name='Cím- és keresősáv' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Untappd Beer Search | Untappd - Google Chrome – Bence' role='pane' /&gt;&lt;ctrl name='Cím- és keresősáv' role='editable text' automationid='' /&gt;" Guid="332be8bf-e332-4ae0-bb51-a06f36c66ed2" InformativeScreenshot="095f83ba8a106e1991a772ca31ea09ed.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Untappd Beer Search | Untappd - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                             </uix:NTypeInto.Target>
                             <uix:NTypeInto.Text>
                               <InArgument x:TypeArguments="x:String">
-                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">"https://untappd.com/search?q=" + NameString + "&amp;type=beer&amp;sort=all"</CSharpValue>
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">"https://untappd.com/search?q=" + NameString + "&amp;type=beer&amp;sort=all"</CSharpValue>
                               </InArgument>
                             </uix:NTypeInto.Text>
                           </uix:NTypeInto>
-                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                             <ui:SendHotkey.Target>
                               <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="78a28f34-01f7-4479-ab05-cdcb68b18f36">
                                 <ui:Target.TimeoutMS>
@@ -294,14 +284,14 @@
                               </ui:Target>
                             </ui:SendHotkey.Target>
                           </ui:SendHotkey>
-                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Ibu_source2' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="1" ScopeIdentifier="62cf0d32-57ef-442f-a9f5-0ebfa3ec47e3" Version="V3">
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='New column 0' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="1" ScopeIdentifier="7dc434b6-d531-4c55-a90d-2f73939418ab" Version="V3">
                             <uix:NExtractData.DataTable>
                               <InOutArgument x:TypeArguments="sd:DataTable">
-                                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">IBUsource2DT</CSharpReference>
+                                <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">IBUsource2DT</CSharpReference>
                               </InOutArgument>
                             </uix:NExtractData.DataTable>
                             <uix:NExtractData.Target>
-                              <uix:TargetAnchorable DesignTimeRectangle="472, 246, 652, 2793" DesignTimeScaleFactor="1" FriendlyName="'Local BuzzFour'" FullSelectorArgument="&lt;webctrl class='results-container' parentid='slide' tag='DIV' /&gt;" Guid="65da3927-a3a8-42c1-8822-48c43bc694e9" InformativeScreenshot="48bd8c5938ef566dda15ba142a2cf30d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              <uix:TargetAnchorable DesignTimeRectangle="472, 465, 652, 2793" DesignTimeScaleFactor="1" FriendlyName="'Local BuzzFour'" FullSelectorArgument="&lt;webctrl class='results-container' parentid='slide' tag='DIV' /&gt;" Guid="27eb9b61-fad0-4c5c-91a3-7fb2240202d3" InformativeScreenshot="4641a2ff67cfd8aab1cec92b53fcf236.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                             </uix:NExtractData.Target>
                           </uix:NExtractData>
                         </Sequence>
@@ -311,55 +301,55 @@
                       <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAcJJREFUWEftl71Lw0AYh0PVWkq1ipZSxA9EEP8UN0c3Rzdx6SKICBUUiiguFRE0ix8IbRepdEgcxDoIbioILTjUQYjg0KHD672R1Lvr4V0CTZcEHpJwb/t77u7NcBpeYGhTYGoGwSKAD+Qxkw73K5jGsiXIQ54b8BMDBUQDfmF1WwACgUDAs0D9Mtx6/rqKMmNu8CTwfBSFnYVxqF+E4fMsBrerc+Q+IKyV4XkFTpeT8K7H4C49Cw9rM8IaFTwLfBcjdjjO/kOPC2tU8CSAe14hs8ZwnL25FQer2CusleFa4O0gaQc7VI8HYXN+0qa0Piz8zX+4EqjlRpnwx41pOCG94Agglay7ZlQWaFz3MeHI624KCukRRgC/DjfboSTQLIdae+6ADYhSGLZNQmmJw6UUNEoh4X/xKAnw+47QnX+f/esDB9V+kApgEB+OS8/Xna8k2iRqen9bHY9UgF96/Oxw6fm6xk0I9hbHGIF98s7X8UgFnjITjIAo3KGqRxgBbFBRHY1UoFnugRey5Nh0tVxCWENjZobspsS7SiNKBTpNIBAIoEA3jmUtUAAPpcLBjmNohe4fTqkTsl+HVJys8RuuaT9V4K802Ub/BAAAAABJRU5ErkJggg==" InformativeScreenshot="04d84da3275b7162b772cd3660811ece.jpg" Selector="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" Title="Untappd Beer Search | Untappd" Url="https://untappd.com/search" />
                     </uix:NApplicationCard.TargetApp>
                   </uix:NApplicationCard>
-                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="614,1736" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="727,2843" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
                     <ui:IfElseIf.ConditionBlocks>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                         <ui:IfElseIfBlock BlockType="If">
                           <ui:IfElseIfBlock.Condition>
                             <InArgument x:TypeArguments="x:Boolean">
-                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">IBUsource2DT.Rows.Count &gt; 0</CSharpValue>
+                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">IBUsource2DT.Rows.Count &gt; 0</CSharpValue>
                             </InArgument>
                           </ui:IfElseIfBlock.Condition>
                           <ui:IfElseIfBlock.Then>
-                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,1540" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="563,1784" sap2010:WorkflowViewState.IdRef="Sequence_14">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Sheet1">
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_11" SheetName="Sheet1">
                                 <ui:ExcelWriteCell.Cell>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">"A"+Rowcounter</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">"A"+Rowcounter</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Cell>
                                 <ui:ExcelWriteCell.Text>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">NameString</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">NameString</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Text>
                               </ui:ExcelWriteCell>
-                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Sheet1">
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_12" SheetName="Sheet1">
                                 <ui:ExcelWriteCell.Cell>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">"B"+Rowcounter</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">"B"+Rowcounter</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Cell>
                                 <ui:ExcelWriteCell.Text>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">StrIbuValue+" IBU"</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">StrIbuValue+" IBU"</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Text>
                               </ui:ExcelWriteCell>
-                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="Sheet1">
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="501,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_13" SheetName="Sheet1">
                                 <ui:ExcelWriteCell.Cell>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">"C"+Rowcounter</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">"C"+Rowcounter</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Cell>
                                 <ui:ExcelWriteCell.Text>
                                   <InArgument x:TypeArguments="x:String">
-                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">IBUsource2DT.Rows[0][0].ToString();</CSharpValue>
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">IBUsource2DT.Rows[0][0].ToString();</CSharpValue>
                                   </InArgument>
                                 </ui:ExcelWriteCell.Text>
                                 <sap:WorkflowViewStateService.ViewState>
@@ -369,26 +359,26 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:ExcelWriteCell>
-                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="501,1045" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="501,1045" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
                                 <ui:IfElseIf.ConditionBlocks>
                                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                     <ui:IfElseIfBlock BlockType="If">
                                       <ui:IfElseIfBlock.Condition>
                                         <InArgument x:TypeArguments="x:Boolean">
-                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">IBUsource2DT.Rows[0][0].ToString() == StrIbuValue+" IBU"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">IBUsource2DT.Rows[0][0].ToString() == StrIbuValue+" IBU"</CSharpValue>
                                         </InArgument>
                                       </ui:IfElseIfBlock.Condition>
                                       <ui:IfElseIfBlock.Then>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="Sheet1" Text="OK">
+                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_14" SheetName="Sheet1" Text="OK">
                                             <ui:ExcelWriteCell.Cell>
                                               <InArgument x:TypeArguments="x:String">
-                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"D"+Rowcounter</CSharpValue>
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">"D"+Rowcounter</CSharpValue>
                                               </InArgument>
                                             </ui:ExcelWriteCell.Cell>
                                             <sap:WorkflowViewStateService.ViewState>
@@ -404,20 +394,20 @@
                                     <ui:IfElseIfBlock BlockType="ElseIf">
                                       <ui:IfElseIfBlock.Condition>
                                         <InArgument x:TypeArguments="x:Boolean">
-                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">IBUsource2DT.Rows[0][0].ToString() == "N/A IBU"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">IBUsource2DT.Rows[0][0].ToString() == "N/A IBU"</CSharpValue>
                                         </InArgument>
                                       </ui:IfElseIfBlock.Condition>
                                       <ui:IfElseIfBlock.Then>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Sheet1" Text="Nem található">
+                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_15" SheetName="Sheet1" Text="Nem található">
                                             <ui:ExcelWriteCell.Cell>
                                               <InArgument x:TypeArguments="x:String">
-                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"D"+Rowcounter</CSharpValue>
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">"D"+Rowcounter</CSharpValue>
                                               </InArgument>
                                             </ui:ExcelWriteCell.Cell>
                                             <sap:WorkflowViewStateService.ViewState>
@@ -433,20 +423,20 @@
                                     <ui:IfElseIfBlock BlockType="ElseIf">
                                       <ui:IfElseIfBlock.Condition>
                                         <InArgument x:TypeArguments="x:Boolean">
-                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">IBUsource2DT.Rows[0][0].ToString() != "N/A IBU" &amp;&amp; IBUsource2DT.Rows[0][0].ToString() != StrIbuValue + " IBU"</CSharpValue>
+                                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">IBUsource2DT.Rows[0][0].ToString() != "N/A IBU" &amp;&amp; IBUsource2DT.Rows[0][0].ToString() != StrIbuValue + " IBU"</CSharpValue>
                                         </InArgument>
                                       </ui:IfElseIfBlock.Condition>
                                       <ui:IfElseIfBlock.Then>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Sheet1" Text="Hiba">
+                                          <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_16" SheetName="Sheet1" Text="Hiba">
                                             <ui:ExcelWriteCell.Cell>
                                               <InArgument x:TypeArguments="x:String">
-                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"D"+Rowcounter</CSharpValue>
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">"D"+Rowcounter</CSharpValue>
                                               </InArgument>
                                             </ui:ExcelWriteCell.Cell>
                                             <sap:WorkflowViewStateService.ViewState>
@@ -462,6 +452,103 @@
                                   </sc:BindingList>
                                 </ui:IfElseIf.ConditionBlocks>
                               </ui:IfElseIf>
+                              <Assign sap:VirtualizedContainerService.HintSize="501,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">
+                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">counter</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">
+                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">counter+1</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="501,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">
+                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">Rowcounter</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">
+                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">Rowcounter+1</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </Sequence>
+                          </ui:IfElseIfBlock.Then>
+                        </ui:IfElseIfBlock>
+                        <ui:IfElseIfBlock BlockType="Else">
+                          <ui:IfElseIfBlock.Then>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,827" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_17" SheetName="Sheet1">
+                                <ui:ExcelWriteCell.Cell>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">"A"+Rowcounter</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Cell>
+                                <ui:ExcelWriteCell.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">NameString</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Text>
+                              </ui:ExcelWriteCell>
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_18" SheetName="Sheet1">
+                                <ui:ExcelWriteCell.Cell>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">"B"+Rowcounter</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Cell>
+                                <ui:ExcelWriteCell.Text>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">StrIbuValue+" IBU"</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Text>
+                              </ui:ExcelWriteCell>
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_19" SheetName="Sheet1" Text="Beer not existing in Source_2">
+                                <ui:ExcelWriteCell.Cell>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">"C"+Rowcounter</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Cell>
+                              </ui:ExcelWriteCell>
+                              <ui:ExcelWriteCell DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_20" SheetName="Sheet1" Text="Nem található">
+                                <ui:ExcelWriteCell.Cell>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">"D"+Rowcounter</CSharpValue>
+                                  </InArgument>
+                                </ui:ExcelWriteCell.Cell>
+                              </ui:ExcelWriteCell>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">
+                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">counter</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">
+                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">counter+1</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">
+                                    <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">Rowcounter</CSharpReference>
+                                  </OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">
+                                    <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">Rowcounter+1</CSharpValue>
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
@@ -471,7 +558,7 @@
                 </Sequence>
               </ui:InterruptibleWhile.Body>
               <ui:InterruptibleWhile.Condition>
-                <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Counter != 25</CSharpValue>
+                <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">counter != 25</CSharpValue>
               </ui:InterruptibleWhile.Condition>
             </ui:InterruptibleWhile>
           </Sequence>

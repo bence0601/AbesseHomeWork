@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "JsonString&Sequence_18",
+        "JsonArray&Sequence_18",
+        "counter&Sequence_18",
+        "Rowcounter&Sequence_18",
+        "IBUsource2DT&Sequence_18",
+        "DataTableVariable&Sequence_17",
+        "NameString&Sequence_16",
+        "StrIbuValue&Sequence_16"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
