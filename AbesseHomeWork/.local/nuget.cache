@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NwvxvHi98HmtBQBkeWfPTF7cW9naYSjvTWPUSAzyLpZpNl4HMjonnQbxWXnpFGTxJ7H2OOIyzlE6u16TVENU1Q==",
+  "dgSpecHash": "t9yyRSDIFuVBJpxwXC4QW1XP5bzpIxHwblK4+Sc5V04bctHzdMbfL2ZRBxV6zMHBHyu1joAo56+4JecuKcXmKA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\AbesseHomework\\AbesseHomeWork\\.local\\",
+  "projectFilePath": "C:\\Projects\\AbesseHomeWork\\AbesseHomeWork\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
